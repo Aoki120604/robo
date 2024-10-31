@@ -4,7 +4,7 @@
 
 import sys
 
-　
+
 def tonum(s):   
 
     try:

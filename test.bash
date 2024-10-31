@@ -1,14 +1,17 @@
-#!/bin/bash
+#!/bin/bash -xv
+# SPDX-FileCopyrightText: 2024 Andou Aoki
+# SPDX-LICENSE-Identifier: BSD-3-Clause
+out=$(seq 5 | ./plus)
+[ "${out}" = 15 ] || ng "$LINENO"
 
-ng(){
-	echo ${1}行目が違うよ
-	res=1
-}
+### STRANGE INPUT ###
+out=$(echo あ | ./plus)           #計算できない値を入力してみる
+[ "$?" = 1 ]      || ng "$LINENO" #終了ステータスが1なのを確認
+[ "${out}" = "" ] || ng "$LINENO"
 
-res=0
-a=山田
-[ "$a" = 上田 ] || ng "$LINENO"
-[ "$a" = 山田 ] || ng "$LINENO"
+out=$(echo | ./plus)              #なにも入力しない
+[ "$?" = 1 ]      || ng "$LINENO" #これも異常終了する
+[ "${out}" = "" ] || ng "$LINENO"
 
+[ "$res" = 0 ] && echo OK
 exit $res
-
