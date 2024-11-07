@@ -9,7 +9,7 @@ def tonum(s):
 
     try:
         return int(s)
-    except:
+    except ValueError:
         return froat(s)
 
 
