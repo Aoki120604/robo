@@ -29,11 +29,8 @@ echo "${out}" | grep -q "エラー: 無効な入力" || ng "$LINENO"
 out=$(echo -e "3 & 4\nexit" | python3 calculator_with_variable.py)
 echo "${out}" | grep -q "エラー: 無効な入力" || ng "$LINENO"
 
-# 空の入力のテスト
-# 入力: "" -> 出力: "エラー: 無効な入力"
 out=$(echo -e "\nexit" | python3 calculator_with_variable.py)
 echo "${out}" | grep -q "エラー: 無効な入力" || ng "$LINENO"
 
-# 最終結果
 [ "${res}" = 0 ] && echo "OK"
 exit "${res}"
