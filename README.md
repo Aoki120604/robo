@@ -16,11 +16,9 @@ python3 kadai1.py
 ## テスト環境
 ・ubuntu20.04
 ## 参考資料
-四則演算プログラム・・https://allinpython.com/create-a-simple-calculator-in-python/
+四則演算プログラム・・https://blog.newtum.com/create-calculator-using-eval-in-python/
 
-https://blog.newtum.com/create-calculator-using-eval-in-python/
-
-テスト実行・・ロボットシステム学11/7スライド
+テスト実行・・ロボットシステム学11/7スライド　https://ryuichiueda.github.io/slides_marp/robosys2024/lesson7.html#14
 ## ライセンス
 ・このソフトウェアパッケージは，3条項BSDライセンスの下、再頒布および使用が許可されます
 ・©　2024　Aoki Andou
