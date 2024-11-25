@@ -9,15 +9,15 @@ ng (){
 res=0
 
 ## 正常動作　##
-out=$(seq 5 | ./plus)
+out=$(seq 5 | ./kadai1)
 [ "${out}" = 15 ]  || ng "$LINENO"
 
 ## 移乗動作 ##
-out=$(echo あ | ./plus)
+out=$(echo あ | ./kadai1)
 [ "$?" = 1 ]       || ng "$LINENO"
 [ "${out}" = "" ]  || ng "$LINENO"
 
-out=$(echo | ./plus)
+out=$(echo | ./kadai1)
 [ "$?" = 1 ]        || ng "$LINENO"
 [ "${out}" = "" ]   || ng "$LINENO"
 
