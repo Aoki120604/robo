@@ -1,7 +1,5 @@
-# calculator_with_variable.py
-# SPDX-FileCopyrightText: 2024 Andou Aoki
-# SPDX-LICENSE-Identifier: BSD-3-Clause
-# import sys
+import sys
+import re
 
 def calculator():
     print("四則演算プログラム")
@@ -13,27 +11,34 @@ def calculator():
     N = 0
 
     while True:
-        # 対話型か非対話型かを判別
-        if sys.stdin.isatty():
-            user_input = input("計算式を入力: ")
-        else:
-            user_input = sys.stdin.readline().strip()
-
-        if not user_input:
-            continue
-
+        user_input = input("計算式を入力: ").strip()
+        
         if user_input.lower() == 'exit':
             print("プログラムを終了")
             break
+        
+        if not user_input:
+            print("エラー: 無効な入力 (空の入力)")
+            continue
 
+        # Nを前回の結果で置換
         user_input = user_input.replace('N', str(N))
 
+        # 無効な記号のチェック（数字、演算子、空白、Nのみにマッチ）
+        if not re.match(r'^[0-9+\-*/.\sN]+$', user_input):
+            print("エラー: 無効な入力")
+            continue
+
         try:
+            # 計算を実行
             result = eval(user_input)
-            N = result
+            N = result  # 前回の結果を保存
             print(f"結果: {result}")
+        except ZeroDivisionError:
+            print("エラー: 無効な入力 (division by zero)")
         except Exception as e:
             print(f"エラー: 無効な入力 ({e})")
 
-if __name__ == "__main__":
+# プログラムを実行
+if __name__ == '__main__':
     calculator()
