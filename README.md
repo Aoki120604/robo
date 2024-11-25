@@ -1,8 +1,22 @@
 #kadai1コマンド
 ![test](https://github.com/Aoki120604/robosys2024/actions/workflows/test.yml/badge.svg)
 
-簡易解説
 四則演算を実行するプログラム
-使い方
-数字　演算子　数字　の順番で打つだけ
-直前で出た答えはNに代入されるのでそのままNと打てば使えます。
+##必要なソフトウエア
+・python(テスト済みバージョン：3.7~3.11)
+##実行方法
+git clone git@github.com:Aoki120604/robosys2024.git
+を入力
+/tmp/robosys2024のリポジトリで
+python3 kadai1.py
+##実行結果
+計算内容を演算子とともに入力（例５＋６等）
+直前の計算結果を用いる場合はNを入力
+終了する場合exitと入力
+##テスト環境
+・ubuntu20.04
+##ライセンス
+・このソフトウェアパッケージは，3条項BSDライセンスの下、再頒布および使用が許可されます
+・©　2024　Aoki Andou
+
+
