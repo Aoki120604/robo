@@ -24,7 +24,7 @@ def calculator():
         # Nに前回の結果を代入
         user_input = user_input.replace('N', str(N))
 
-        # 無効な記号のチェック（数字、演算子、空白、Nを除く）
+        # 無効な記号のチェック
         if not re.match(r'^[0-9+\-*/.\sN]+$', user_input):
             print("エラー: 無効な入力")
             continue
