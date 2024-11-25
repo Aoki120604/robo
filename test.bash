@@ -9,7 +9,6 @@ ng() {
 
 res=0
 
-# 正常動作テスト
 out=$(echo -e "3 + 4\nexit" | python3 kadai1.py | grep -E "結果:|エラー:")
 echo "${out}" | grep -q "結果: 7" || ng "$LINENO"
 
