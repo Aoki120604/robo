@@ -33,3 +33,6 @@ def calculator():
             print("エラー: 無効な入力 (division by zero)")
         except Exception as e:
             print(f"エラー: 無効な入力 ({e})")
+
+if __name__ == "__main__":
+    calculator()
