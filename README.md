@@ -17,6 +17,7 @@ python3 kadai1.py
 ・ubuntu20.04
 ## 参考資料
 四則演算プログラム・・https://blog.newtum.com/create-calculator-using-eval-in-python/
+電卓関数について・・https://naowalrahman.rocks/calc/
 
 テスト実行・・ロボットシステム学11/7スライド　https://ryuichiueda.github.io/slides_marp/robosys2024/lesson7.html#14
 ## ライセンス
