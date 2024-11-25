@@ -12,7 +12,8 @@ def calculator():
     N = 0
 
     while True:
-        user_input = input("計算式を入力: ")
+        import sys
+        user_input = input("計算式を入力: ") if sys.stdin.isatty() else sys.stdin.readline().strip()
         if user_input.lower() == 'exit':
             print("プログラムを終了")
             break
