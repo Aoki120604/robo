@@ -21,24 +21,22 @@ def calculator():
             print("エラー: 無効な入力 (空の入力)")
             continue
 
-        # Nを前回の結果で置換
+        # Nに前回の結果を代入
         user_input = user_input.replace('N', str(N))
 
-        # 無効な記号のチェック（数字、演算子、空白、Nのみにマッチ）
+        # 無効な記号のチェック（数字、演算子、空白、Nを除く）
         if not re.match(r'^[0-9+\-*/.\sN]+$', user_input):
             print("エラー: 無効な入力")
             continue
 
         try:
-            # 計算を実行
             result = eval(user_input)
-            N = result  # 前回の結果を保存
+            N = result
             print(f"結果: {result}")
         except ZeroDivisionError:
             print("エラー: 無効な入力 (division by zero)")
         except Exception as e:
             print(f"エラー: 無効な入力 ({e})")
 
-# プログラムを実行
 if __name__ == '__main__':
     calculator()
