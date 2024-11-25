@@ -1,2 +1,3 @@
 # robo
-kadai1コマンド
+kadai1コマン
+[test]
