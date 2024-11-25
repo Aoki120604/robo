@@ -1,2 +1,3 @@
 # robo
-授業で作成
+kadai1コマン
+[test]
