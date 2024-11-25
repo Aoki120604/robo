@@ -18,6 +18,7 @@ python3 kadai1.py
 ## 参考資料
 四則演算プログラム・・https://allinpython.com/create-a-simple-calculator-in-python/
 
+https://blog.newtum.com/create-calculator-using-eval-in-python/
 
 テスト実行・・ロボットシステム学11/7スライド
 ## ライセンス
