@@ -1,13 +1,33 @@
-name: test
-on: push
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3,7","3,8","3,9","3,10","3.11"]
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
     steps:
-    - uses: actions/checkout@v3
-    - name: All test
-      run: bash -xv ./test.bash
-           bash -xv ./test.kadai
+      # リポジトリをチェックアウト
+      - uses: actions/checkout@v3
+
+      # Pythonバージョンをセットアップ
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # 必要な依存関係をインストール（もしあればrequirements.txtを使用）
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      # テストを実行
+      - name: Run all tests
+        run: bash -xv ./test.bash
+
