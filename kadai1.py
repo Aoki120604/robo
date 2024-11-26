@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Andou Aoki
+# SPDX-LICENSE-Identifier: BSD-3-Clause
+
 import sys
 import re
 
