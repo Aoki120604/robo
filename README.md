@@ -22,6 +22,7 @@ python3 kadai1.py
 テスト実行・・ロボットシステム学11/7スライド　https://ryuichiueda.github.io/slides_marp/robosys2024/lesson7.html#14
 ## ライセンス
 ・このソフトウェアパッケージは，3条項BSDライセンスの下、再頒布および使用が許可されます
+・このパッケージのコードの一部は、（CC-BY－SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです
 ・©　2024　Aoki Andou
 
 
