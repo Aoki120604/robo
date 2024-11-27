@@ -11,7 +11,7 @@ git clone git@github.com:Aoki120604/robosys2024.git
 を入力
 /tmp/robosys2024のリポジトリで
 ~~~
-./kadai1.py
+./kadai1
 ~~~
 ## 実行結果
 実行後以下のような文章がでてくるので計算したい式を代入
