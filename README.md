@@ -24,19 +24,24 @@ git clone git@github.com:Aoki120604/robosys2024.git
 計算式を入力:
 ~~~
 計算内容を演算子とともに入力（例５＋６等）
+
 直前の計算結果を用いる場合はNを入力
+
 終了する場合exitと入力
 ## テスト環境
 ・ubuntu23.04
 ## 参考資料
 四則演算プログラム・・https://blog.newtum.com/create-calculator-using-eval-in-python/
+
 電卓関数について・・https://naowalrahman.rocks/calc/
 
 テスト実行・・ロボットシステム学11/7スライド　https://ryuichiueda.github.io/slides_marp/robosys2024/lesson7.html#14
 ## ライセンス
 ・このソフトウェアパッケージは，3条項BSDライセンスの下、再頒布および使用が許可されます
+
 ・このパッケージのコードの一部は、（CC-BY－SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです
 https://github.com/ryuichiueda/my_slides/tree/master/robosys_2024
+
 ・©　2024　Aoki Andou 
 
 
