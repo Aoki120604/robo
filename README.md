@@ -14,6 +14,16 @@ git clone git@github.com:Aoki120604/robosys2024.git
 ./kadai1.py
 ~~~
 ## 実行結果
+実行後以下のような文章がでてくるので計算したい式を代入
+~~~
+四則演算プログラム
+以下の形式で入力してください：
+数字 計算記号 数字（例: 3 + 4）
+前回の結果を使う場合は 'N' を使用してください（例: N + 5）
+終了する場合 'exit' と入力
+計算式を入力: exit
+プログラムを終了
+~~~
 計算内容を演算子とともに入力（例５＋６等）
 直前の計算結果を用いる場合はNを入力
 終了する場合exitと入力
@@ -28,6 +38,6 @@ git clone git@github.com:Aoki120604/robosys2024.git
 ・このソフトウェアパッケージは，3条項BSDライセンスの下、再頒布および使用が許可されます
 ・このパッケージのコードの一部は、（CC-BY－SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです
 https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022
-・©　2024　Aoki Andou
+・©　2024　Aoki Andou 
 
 
